@@ -809,12 +809,128 @@ form {
 
 
 
+/** footer start **/
+
+.bg-footer {
+    position: relative;
+}
+
+.bg-footer::before {
+    content: '';
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 2px;
+    background: #21d0f3;
+    z-index: -1;
+}
+
+.footer {
+    display: flex;
+    grid-gap: 200px;
+    margin-left: 100px;
+    width: 100%;
+}
+
+.footer .flex-footer p {
+    margin-bottom: 0;
+}
+
+.logo-text {
+    margin: auto 0;
+    position: relative;
+}
+
+.footer-bg {
+    content: '';
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: 
+        -7px -7px 40px #28829dc7,
+        7px 7px 30px #2fa0b9e0,
+        inset 4px 1px 3px #85d2ff,
+        inset 4px 10px 20px #2192f3,
+        inset 4px 11px 10px #3e85c2,
+        inset -4px -1px 3px #81e8ff,
+        inset -4px -10px 20px #3e85c2,
+        inset -4px -11px 10px #2192f3,
+        inset 27px 21px 30px 5px rgb(108 214 255 / 20%),
+        inset -27px -22px 30px 5px rgb(39 175 255 / 20%);
+
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    z-index: -2;
+}
+
+.flex-footer {
+    display: flex;
+    margin: auto;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    margin: 0 150px 0 0;
+}
+
+.footer .col p {
+    margin-bottom: 30px;
+}
+
+.col a {
+    color: #ebe6f1c0;
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+    transition: .4s;
+    position: relative;
+}
+
+.col a:hover {
+    color: ghostwhite;
+    transform: scale(1.2) translateX(3px);
+}
+
+.last {
+    padding: 0 10%;
+}
+
+.copy {
+    position: absolute;
+    top: 95%;
+    left: 10%;
+    transform: translateY(-50%);
+}
+
+.social {
+    display: flex;
+    grid-gap: 25px;
+}
+
+.social ion-icon {
+    font-size: 1.5rem;
+    color: #f1f1f1;
+    transition: .4s;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;
+    border-radius: 50%;
+    border: 2px solid #f1f1f1;
+}
+
+.col:nth-child(3) h3,
+.col:nth-child(3) p {
+    text-align: center;
+}
 
 
-
-
-
-
+/** footer end **/
 
 
 
